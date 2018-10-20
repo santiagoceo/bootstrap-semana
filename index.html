@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Semana Bootstrap</title>
+    <style>
+      /*Ajuste flexbox semana*/
+      @media (min-width: 1200px){
+        .container:nth-child(1), .container:nth-child(2) {
+            max-width: 1260px;
+        }
+      }
+      /*Fix menú*/
+      .navbar-light .navbar-nav .nav-link {
+        font-size: 13px;
+        padding: 0px 3px;
+        color: white;
+      }
+      .bg-red {
+        background: rgba(210, 34, 36, 1);
+      }
+      .mt-15{
+        margin-top: 15px;
+      }
+      .mb-15{
+        margin-bottom: 15px;
+      }
+      nav li + li:before{
+        content: " | ";
+        padding: 0 10px;
+      }
+      .btnSuscribase {
+        margin-top: -3px;
+        font-weight: 600;
+        padding: 4px 8px;
+      }
+      .menuSemana {
+        padding: 13px 0px;
+      }
+      .menuSemana a + a:before{
+        content: " | ";
+        padding: 0 1px;
+        color: #d98081;
+      }
+      /*Ajustes tendend}cias*/
+      .tendenciaSingular{
+        color: #999;
+        font-size: 0.6875rem;
+      }
+      .simboloRojo img{
+        width: 9px;
+      }
+      .negrita{
+        font-weight: 700;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container">
+            <div class="collapse navbar-collapse mt-15 mb-15" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a href="">
+                  <img src="https://static.iris.net.co/semana/img/logo-semana.svg" alt="">
+                </a>
+              </div>          
+            </div>
+            <div class="row">
+              <ul class="nav navbar-nav navbar-right">
+                <li>Sábado, 20 de octubre de 2018</li>
+                <li>
+                  <button type="button" class="btn btn-outline-danger btnSuscribase">
+                      <span class="glyphicon glyphicon-shopping-cart"></span>
+                    Suscríbase
+                  </button>
+                </li>
+                <li>Newsletter</li>
+                <li>Iniciar sesión</li>
+              </ul>
+              <!--
+              <div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                  <div class="input-group-append">
+                    <span class="input-group-text" id="basic-addon2">@</span>
+                  </div>
+              </div>
+              -->
+            </div>
+          </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-red menuSemana">
+          <div class="container">
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link text-uppercase" href="#">Nación</span></a>
+                <a class="nav-item nav-link text-uppercase" href="#">Opinión</a>
+                <a class="nav-item nav-link text-uppercase" href="#">Economía</a>
+                <a class="nav-item nav-link text-uppercase" href="#">Vida Moderna</a>
+                <a class="nav-item nav-link text-uppercase" href="#">Gente</a>
+                <a class="nav-item nav-link text-uppercase" href="#">Cultura</a>
+                <a class="nav-item nav-link text-uppercase" href="#">Mundo</a>
+                <a class="nav-item nav-link text-uppercase" href="#">Tecnología</a>
+                <a class="nav-item nav-link text-uppercase" href="#">Educación</a>
+                <a class="nav-item nav-link text-uppercase" href="#">Deportes</a>
+                <a class="nav-item nav-link text-uppercase" href="#">Sostenibilidad</a>
+                <a class="nav-item nav-link text-uppercase" href="#">Foros Semana</a>
+                <a class="nav-item nav-link text-uppercase" href="#">Edición impresa</a>
+                <a class="nav-item nav-link text-uppercase" href="#">Ico1</a>
+                <a class="nav-item nav-link text-uppercase" href="#">Ico2</a>
+                <a class="nav-item nav-link text-uppercase" href="#">Ico3</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <div class="container-fluid border-top mt-1">
+        </div>
+
+        <div class="container">
+          <div class="col-md-12 mt-2">
+            <span class="negrita">TENDENCIAS</span>
+            <span class="simboloRojo"><img src="img/flechaTagsOpinion.svg" alt=""></span> 
+            <a class="tendenciaSingular" href="">ERNESTO MACÍAS</a>
+            <a class="tendenciaSingular" href="">CÁNCER DE MAMA</a>
+            <a class="tendenciaSingular" href="">ANTIOQUIA</a>
+            <a class="tendenciaSingular" href="">ABORTO</a>
+            <a class="tendenciaSingular" href="">CRISIS UNIVERSIDADES PÚBLICAS</a>
+            <a class="tendenciaSingular" href="">CONSULTA POPULAR MINERÍATENDENCIAS</a>
+          </div>
+        </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
